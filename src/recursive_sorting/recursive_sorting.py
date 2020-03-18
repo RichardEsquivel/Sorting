@@ -1,14 +1,22 @@
-# TO-DO: complete the helpe function below to merge 2 sorted arrays
-def merge( arrA, arrB ):
-    elements = len( arrA ) + len( arrB )
-    merged_arr = [0] * elements
+# TO-DO: complete the helper function below to merge 2 sorted arrays
+def merge(arrA, arrB):
+    #elements = len( arrA ) + len( arrB )
+    # This below is used to intialize an empty array
+    merged_arr = []
+    # We will establish the first index value for the A partition and B partition
     # TO-DO
-    
+    left = 0
+    right = 0
+    # This will end the loop when the length of each partition A and B has been reached
+    while left < len(arrA) and right < len(arrB):
+        # Compare the value of the left index value to the right index value in each partition
+        # If left value is less then append that value to the array A partition and increment to next
+        # left value with +=1
     return merged_arr
 
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
-def merge_sort( arr ):
+def merge_sort(arr):
     # TO-DO
 
     return arr
@@ -20,7 +28,8 @@ def merge_in_place(arr, start, mid, end):
 
     return arr
 
-def merge_sort_in_place(arr, l, r): 
+
+def merge_sort_in_place(arr, l, r):
     # TO-DO
 
     return arr
@@ -28,6 +37,6 @@ def merge_sort_in_place(arr, l, r):
 
 # STRETCH: implement the Timsort function below
 # hint: check out https://github.com/python/cpython/blob/master/Objects/listsort.txt
-def timsort( arr ):
+def timsort(arr):
 
     return arr
