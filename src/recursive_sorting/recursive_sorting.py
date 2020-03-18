@@ -11,7 +11,13 @@ def merge(arrA, arrB):
     while left < len(arrA) and right < len(arrB):
         # Compare the value of the left index value to the right index value in each partition
         # If left value is less then append that value to the array A partition and increment to next
-        # left value with +=1
+        # left value with +=1, do the same with the right value
+        if arrA[left] < arrB[right]:
+            merged_arr.append(arrA[left])
+            left += 1
+    while right < len(arrB):
+        merged_arr.append(arrB[right])
+        right += 1
     return merged_arr
 
 
