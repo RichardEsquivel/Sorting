@@ -37,9 +37,9 @@ def bubble_sort(arr):
       array being passed in is going to have swapped action performed on it.'''
     swapped = True
     while swapped:
-    '''this swapped =false will only break the loop once the
-        if statement where left value is not greater than the right value is not true
-        and will then make statement false and break the loop'''
+    '''This swapped above will only = false will and break the loop once the
+       if statement where left value is not greater than the right value is not true
+       and will then make statement false and break the loop'''
      swapped = False
       for i in range(0, len(arr) - 1):
            if arr[i] > arr[i+1]:
